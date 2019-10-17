@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-import '../fonts/fonts-post.css';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import { rhythm, scale } from '../utils/typography';
+import '../fonts/fonts-post.css';
 const GITHUB_USERNAME = 'Prosen-Ghosh';
 const GITHUB_REPO_NAME = 'codesnap.io';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",

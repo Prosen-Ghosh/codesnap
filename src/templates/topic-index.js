@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-import '../fonts/fonts-post.css';
 import { Card, Avatar, Row, Col, Layout as antLayout } from 'antd';
 import _ from 'lodash';
 import Layout from '../components/Layout';
 import { rhythm } from '../utils/typography';
 import { getCategoryLogos } from '../utils/helpers';
+import '../fonts/fonts-post.css';
+
 const { Meta } = Card;
 const { Content } = antLayout;
 const GITHUB_USERNAME = 'Prosen-Ghosh';
