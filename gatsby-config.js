@@ -51,7 +51,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-antd`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

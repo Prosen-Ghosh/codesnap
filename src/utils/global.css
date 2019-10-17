@@ -192,3 +192,38 @@ pre[data-line] {
   float: left;
   min-width: 100%;
 }
+
+/* CARD */
+
+.show-card {
+  background: #fff;
+  border-radius: 4em;
+  border: 0.1em solid #626c94;
+  color: #222;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0.5em 0.8em 0.5em 6em;
+  position: relative;
+  outline: none;
+  margin: 4px;
+  box-shadow: 4px 5px 3px #aaaaaa58;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.show-card:hover {
+  transform: scale(1.02);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-card img {
+  border-radius: 50%;
+  left: 0.22em;
+  position: absolute;
+  top: 0.25em;
+  width: 2em;
+}
