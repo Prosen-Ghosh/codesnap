@@ -41,7 +41,7 @@ export default class Topic extends React.Component {
           .filter(v => v)
           .map(v => {
             return (
-              <Link to={v.toLowerCase()} className="nounderline">
+              <Link key={v} to={v.toLowerCase()} className="nounderline">
                 <button className="show-card nounderline">
                   <img
                     alt={v.toLowerCase()}

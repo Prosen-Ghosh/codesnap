@@ -13,6 +13,7 @@ body.light {
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
   --inlineCode-text: #1a1a1a;
   --twitter: #1da1f2;
+  --btnBorder: #20c997;
 }
 
 body.dark {
@@ -25,6 +26,7 @@ body.dark {
   --hr: hsla(0, 0%, 100%, 0.2);
   --inlineCode-bg: hsl(222, 14%, 25%);
   --inlineCode-text: #e6e6e6;
+  --btnBorder: #efe468;
 }
 
 .nounderline {
@@ -198,7 +200,7 @@ pre[data-line] {
 .show-card {
   background: #fff;
   border-radius: 4em;
-  border: 0.1em solid #626c94;
+  border: 0.1em solid var(--btnBorder);
   color: #222;
   font-size: 18px;
   line-height: 1.5;
