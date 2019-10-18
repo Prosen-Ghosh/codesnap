@@ -37,21 +37,30 @@ export default class Topic extends React.Component {
         >
           Browse by Technology
         </h2>
-        {[...allTopic]
-          .filter(v => v)
-          .map(v => {
-            return (
-              <Link key={v} to={v.toLowerCase()} className="nounderline">
-                <button className="show-card nounderline">
-                  <img
-                    alt={v.toLowerCase()}
-                    src={categoryLogo[v.toLowerCase()]}
-                  />
-                  {v}
-                </button>
-              </Link>
-            );
-          })}
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'baseline',
+            flexWrap: 'wrap',
+          }}
+        >
+          {[...allTopic]
+            .filter(v => v)
+            .map(v => {
+              return (
+                <Link key={v} to={v.toLowerCase()} className="nounderline">
+                  <button className="show-card nounderline">
+                    <img
+                      alt={v.toLowerCase()}
+                      src={categoryLogo[v.toLowerCase()]}
+                    />
+                    {v}
+                  </button>
+                </Link>
+              );
+            })}
+        </div>
       </Layout>
     );
   }
