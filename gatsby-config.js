@@ -142,7 +142,7 @@ module.exports = {
         short_name: `Codesnap`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#ffa7c4`,
+        theme_color: `rgba(51, 170, 204, 1)`,
         display: `minimal-ui`,
         icon: `src/assets/logos/cs.png`,
         theme_color_in_head: false,
