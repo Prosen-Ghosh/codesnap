@@ -42,11 +42,11 @@ export default function SEO({
             htmlAttributes={{ lang }}
             {...(title
               ? {
-                  titleTemplate: `%s — ${siteMetadata.title}`,
+                  titleTemplate: `${siteMetadata.title}:: %s`,
                   title,
                 }
               : {
-                  title: `${siteMetadata.title} — A blog by Prosen Ghosh`,
+                  title: `Codesnap::Home`,
                 })}
             meta={[
               {

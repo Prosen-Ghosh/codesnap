@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { rhythm, scale } from '../utils/typography';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
+import csLogo from '../assets/logos/cs-logo.svg';
 
 export default class Layout extends React.Component {
   state = {
@@ -37,7 +38,13 @@ export default class Layout extends React.Component {
             }}
             to={'/'}
           >
-            {title}
+            {/* {title} */}
+            <img
+              style={{ marginBottom: 0 }}
+              src={csLogo}
+              width="100%"
+              height="64"
+            />
           </Link>
         </h1>
       );
@@ -60,7 +67,13 @@ export default class Layout extends React.Component {
             }}
             to={'/'}
           >
-            {title}
+            {/* {title} */}
+            <img
+              style={{ marginBottom: 0 }}
+              src={csLogo}
+              width="100%"
+              height="64"
+            />
           </Link>
         </h3>
       );
@@ -99,7 +112,7 @@ export default class Layout extends React.Component {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              marginBottom: '2.625rem',
+              marginBottom: '1.625rem',
             }}
           >
             {this.renderHeader()}

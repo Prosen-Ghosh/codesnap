@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import { rhythm } from '../utils/typography';
 import { getCategoryLogos } from '../utils/helpers';
 import '../fonts/fonts-post.css';
+import SEO from '../components/SEO';
 const GITHUB_USERNAME = 'Prosen-Ghosh';
 const GITHUB_REPO_NAME = 'codesnap.io';
 
@@ -26,6 +27,7 @@ export default class Topic extends React.Component {
     const categoryLogo = getCategoryLogos();
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <SEO />
         <h2
           style={{
             display: 'flex',

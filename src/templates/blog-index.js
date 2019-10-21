@@ -10,9 +10,10 @@ export default class BlogIndexTemplate extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    let { category } = this.props.pageContext;
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO />
+        <SEO title={category} />
         <main>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
