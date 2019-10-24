@@ -57,14 +57,14 @@ class BlogPostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <footer>
               <p style={{ marginBottom: '0px', fontSize: '13px' }}>
-                <a
+                {/* <a
                   style={{ color: '#86ddf9' }}
                   href={`${gitHub}/issues`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Discuss on Github
-                </a>
+                </a> */}
                 {` • `}
                 <a
                   style={{ color: '#86ddf9' }}

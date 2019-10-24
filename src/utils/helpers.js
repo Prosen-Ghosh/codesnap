@@ -10,6 +10,7 @@ import redis from '../assets/logos/redis.svg';
 import mongodb from '../assets/logos/mongodb.svg';
 import mysql from '../assets/logos/mysql.svg';
 import hapijs from '../assets/logos/hapi.svg';
+import git from '../assets/logos/git.svg';
 
 export function formatReadingTime(minutes) {
   let cups = Math.round(minutes / 5);
@@ -48,5 +49,6 @@ export function getCategoryLogos() {
     mongodb,
     mysql,
     hapijs,
+    git,
   };
 }
