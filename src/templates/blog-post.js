@@ -8,7 +8,7 @@ import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import { rhythm, scale } from '../utils/typography';
 import '../fonts/fonts-post.css';
 const GITHUB_USERNAME = 'Prosen-Ghosh';
-const GITHUB_REPO_NAME = 'codesnap.io';
+const GITHUB_REPO_NAME = 'codesnap';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -26,7 +26,7 @@ class BlogPostTemplate extends React.Component {
     } = this.props.pageContext;
 
     let html = post.html;
-
+    const gitHub = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}`;
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -55,6 +55,27 @@ class BlogPostTemplate extends React.Component {
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            <footer>
+              <p style={{ marginBottom: '0px', fontSize: '13px' }}>
+                <a
+                  style={{ color: '#86ddf9' }}
+                  href={`${gitHub}/issues`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discuss on Github
+                </a>
+                {` • `}
+                <a
+                  style={{ color: '#86ddf9' }}
+                  href={`${gitHub}/tree/master/src/pages${post.fields.slug}index.md`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Edit on GitHub
+                </a>
+              </p>
+            </footer>
           </article>
         </main>
         <aside>
