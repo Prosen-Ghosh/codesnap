@@ -9,6 +9,7 @@ import { rhythm, scale } from '../utils/typography';
 import '../fonts/fonts-post.css';
 const GITHUB_USERNAME = 'Prosen-Ghosh';
 const GITHUB_REPO_NAME = 'codesnap';
+const SITE_NAME = 'https://prosen-ghosh.github.io/codesnap';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -27,6 +28,9 @@ class BlogPostTemplate extends React.Component {
 
     let html = post.html;
     const gitHub = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}`;
+    const twitterShareContent = `text=${siteTitle}:: I love this blog post and hope you like it too.&url=${SITE_NAME}${
+      post.fields.slug
+    }&hashtags=${'code, programing'}&related=${'JavaScript, NodeJs'}`;
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -56,7 +60,13 @@ class BlogPostTemplate extends React.Component {
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <footer>
-              <p style={{ marginBottom: '0px', fontSize: '13px' }}>
+              <p
+                style={{
+                  marginBottom: '0px',
+                  fontSize: '13px',
+                  display: 'flex',
+                }}
+              >
                 {/* <a
                   style={{ color: '#86ddf9' }}
                   href={`${gitHub}/issues`}
@@ -74,6 +84,27 @@ class BlogPostTemplate extends React.Component {
                 >
                   Edit on GitHub
                 </a>
+                {/* <span>Share this post on</span> */}
+                <span style={{ marginLeft: rhythm(0.75) }}>
+                  <iframe
+                    src={`https://www.facebook.com/plugins/share_button.php?href=${`${SITE_NAME}/${post.fields.slug}`}&layout=button_count&size=small&width=88&height=20&appId`}
+                    width="88"
+                    height="20"
+                    style={{ border: 'none', overflow: 'hidden' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allow="encrypted-media"
+                  ></iframe>
+                </span>
+                <span>
+                  <a
+                    className="twitter-share-button"
+                    target="_blank"
+                    href={`https://twitter.com/intent/tweet?${twitterShareContent}`}
+                  >
+                    Tweet
+                  </a>
+                </span>
               </p>
             </footer>
           </article>
