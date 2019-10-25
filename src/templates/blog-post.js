@@ -62,7 +62,7 @@ class BlogPostTemplate extends React.Component {
                 {formatPostDate(post.frontmatter.date)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
                 {` • `}
-                <Badge data={tags.split(',')} />
+                <Badge data={tags ? tags.split(',') : []} />
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
