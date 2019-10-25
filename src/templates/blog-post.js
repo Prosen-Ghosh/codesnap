@@ -34,6 +34,8 @@ class BlogPostTemplate extends React.Component {
     } by @${post.frontmatter.twitter}&url=${SITE_NAME}${
       post.fields.slug
     }&hashtags=${post.frontmatter.tags}&related=${'Programming,Blog'}`;
+
+    const tags = post.frontmatter.tags || '';
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -60,7 +62,7 @@ class BlogPostTemplate extends React.Component {
                 {formatPostDate(post.frontmatter.date)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
                 {` • `}
-                <Badge data={post.frontmatter.tags.split(',')} />
+                <Badge data={tags.split(',')} />
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
