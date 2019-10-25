@@ -123,6 +123,7 @@ module.exports = {
                         gitHub
                         stackOverflow
                         linkedin
+                        tags
                       }
                     }
                   }

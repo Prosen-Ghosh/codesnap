@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import { rhythm, scale } from '../utils/typography';
 import '../fonts/fonts-post.css';
+import Badge from '../components/Badge';
 const GITHUB_USERNAME = 'Prosen-Ghosh';
 const GITHUB_REPO_NAME = 'codesnap';
 const SITE_NAME = 'https://prosen-ghosh.github.io/codesnap';
@@ -28,9 +29,11 @@ class BlogPostTemplate extends React.Component {
 
     let html = post.html;
     const gitHub = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}`;
-    const twitterShareContent = `text=${siteTitle}:: I love this blog post and hope you like it too.&url=${SITE_NAME}${
+    const twitterShareContent = `text=${siteTitle}:: ${
+      post.frontmatter.title
+    } by @${post.frontmatter.twitter}&url=${SITE_NAME}${
       post.fields.slug
-    }&hashtags=${'code, programing'}&related=${'JavaScript, NodeJs'}`;
+    }&hashtags=${post.frontmatter.tags}&related=${'Programming,Blog'}`;
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -56,6 +59,8 @@ class BlogPostTemplate extends React.Component {
               >
                 {formatPostDate(post.frontmatter.date)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
+                {` • `}
+                <Badge data={post.frontmatter.tags.split(',')} />
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -85,7 +90,7 @@ class BlogPostTemplate extends React.Component {
                   Edit on GitHub
                 </a>
                 {/* <span>Share this post on</span> */}
-                <span style={{ marginLeft: rhythm(0.75) }}>
+                <span style={{ marginLeft: rhythm(1 / 4) }}>
                   <iframe
                     src={`https://www.facebook.com/plugins/share_button.php?href=${`${SITE_NAME}/${post.fields.slug}`}&layout=button_count&size=small&width=88&height=20&appId`}
                     width="88"
@@ -204,6 +209,7 @@ export const pageQuery = graphql`
         gitHub
         stackOverflow
         linkedin
+        tags
       }
       fields {
         slug

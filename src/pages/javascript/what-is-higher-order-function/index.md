@@ -9,6 +9,7 @@ gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh
 linkedin: prosen-ghosh
 category: JavaScript
+tags: 'JavaScript'
 ---
 
 ## Higher-order function কি?

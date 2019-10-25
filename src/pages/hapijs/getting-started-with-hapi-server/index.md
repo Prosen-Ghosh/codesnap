@@ -9,6 +9,7 @@ gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh
 linkedin: prosen-ghosh
 category: HapiJS
+tags: 'JavaScript,NodeJs,HapiJs'
 ---
 
 ## আপনার প্রথম “Hello World” সার্ভার
