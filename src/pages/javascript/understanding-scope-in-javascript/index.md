@@ -52,8 +52,11 @@ Global scope এ আমরা কখনো variable declare করবো না,
 
 যখনি আমরা global scope এর মধ্যে আর একটা নতুন scope তৈরী করবো ঐটা local scope হবে। local scope এর ভ্যারিয়েবল গুলা শুধু মাত্র ওই scope এ access করা যাবে, global scope কিংবা অন্য কোনো local scope এ ঐটা access করা যাবে না। 
 
-```js{5}
+```js{8}
+// Global Scope
+
 function localScope(){
+	// Local Scope
 	var localVariable = true;
 }
 localScope(); // invoked at Global Scope
@@ -191,5 +194,5 @@ console.log("After loop: ",i); // ReferenceError: i is not defined
 মনে রাখতে হবে let, const দিয়ে একই scope এ একই নামে এক এর অধিক variable তৈরি করা যাবে না, তৈরি করলে Error দিবে। var দিয়ে তৈরি করা যাবে, কিন্তু করা bad practice.
 
 [DevTools open]: <https://developers.google.com/web/tools/chrome-devtools/open>
-[Hoisting]: </javascript/what-is-hoisting>
+[Hoisting]: </javascript/hoisting-in-javascript>
 [call stack]: <https://developer.mozilla.org/en-US/docs/Glossary/Call_stack>
