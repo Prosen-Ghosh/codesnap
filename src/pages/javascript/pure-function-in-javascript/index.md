@@ -29,6 +29,23 @@ add(1,2); // 3
 
 এইখানে `add` function টা একটা pure function, যেকোনো 2 টা argument নিয়ে ওই argument এর জন্যে same result দিবে।
 
+আর একটা কোড দেখি,
+
+```js
+let user = {
+	firstName: "Michael",
+	lastName: "Jackson",
+	gender: "M"
+}
+
+function getFullName(user) {
+	return `${user.firstName} ${user.lastName}`;
+}
+console.log(getFullName(user)); // Michael Jackson 
+```
+
+এইখানে `getFullName` একটা pure function, কারণ `getFullName` state mutate করছে না। 
+
 ## Impure Function কি?
 
 	1. Database create/update করা। 
@@ -57,6 +74,22 @@ add(1,2); // 3
 ```
 
 যদি ও আমরা same input এর জন্যে same output পাচ্ছি, এবং `console.log` আমাদের code এর জন্যে harfull না তার পর ও এইটা pure function না। 
+
+```js
+let user = {
+	firstName: "Michael",
+	lastName: "Jackson",
+	gender: "M"
+}
+
+function getFullName(user) {
+	user.firstName = user.gender === "M" ? `Mr. ${user.firstName}`: `Mrs. ${user.firstName}`;
+	return `${user.firstName} ${user.lastName}`;
+}
+console.log(getFullName(user)); // Mr. Michael Jackson 
+```
+এইখানে `getFullName` একটা impure function, কারণ `getFullName` state mutate করছে। 
+
 
 ## Pure vs Impure
 
@@ -120,7 +153,11 @@ console.log(cart); // {items: Array(1)}
 console.log(newCart); // {items: Array(2)}
 ```
 
-এইখানে, pure function টা cart chnage না করে cart এর একটা copy তৈরী করে সেটা কে change করে পাঠাচ্ছে। এর কারণে orginal cart এর data chnage হচ্ছে না। আপনি যদি react, redux use করে থাকেন তাহলে pure function এর ব্যবহার দেখবেন। 
+এইখানে, pure function টা cart chnage না করে cart এর একটা copy তৈরী করে সেটা কে change করে পাঠাচ্ছে। এর কারণে orginal cart এর data chnage হচ্ছে না। আপনি যদি [react], [redux] use করে থাকেন তাহলে pure function এর ব্যবহার দেখবেন। 
 
 > Pure function সহজে predict করা যায়, এর জন্যে test করতে সুবিধা হয়। 
 > Pure function state management আরো সহজ করে। 
+
+
+[react]: <https://reactjs.org/>
+[redux]: <https://redux.js.org/>
