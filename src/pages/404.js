@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import get from 'lodash/get';
+import { Link } from 'gatsby';
 
 export default class NotFoundPage extends React.Component {
   render() {
@@ -23,7 +24,7 @@ export default class NotFoundPage extends React.Component {
               পরিবর্তন হয়েছে বা অস্থায়ীভাবে বন্ধ রাখা হয়েছে।
             </p>
             <p>
-              হোমপেজে <a href="/">ফিরে যাওয়ার চেষ্টা করুন।</a>
+              হোমপেজে <Link to={'/'}>ফিরে যাওয়ার চেষ্টা করুন।</Link>
             </p>
           </div>
         </main>
