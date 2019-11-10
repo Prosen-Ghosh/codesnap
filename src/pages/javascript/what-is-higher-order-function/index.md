@@ -1,5 +1,5 @@
 ---
-title: What higher order function?
+title: What is higher order function?
 date: '2019-10-13'
 spoiler: Higher-order function একটা এমন ধরণের function যেটা নিচের যে কোন একটা শর্ত পূরণ করবে, এক বা একাধিক function arguments হিসাবে নিবে। অথবা, একটা function result হিসাবে return করবে।
 author: Prosen Ghosh
