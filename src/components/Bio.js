@@ -69,6 +69,7 @@ class Bio extends React.Component {
                   marginTop: rhythm(0.2),
                   width: rhythm(0.8),
                   height: rhythm(0.8),
+                  cursor: 'pointer',
                 }}
               />
             </a>
