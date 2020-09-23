@@ -3,7 +3,8 @@ title: Pure Function In JavaScript
 date: '2019-11-02'
 spoiler: Pure Function এমন এক ধরণের function যেটার return value input value দেখে বলা যাই এবং যে function এর কোনো side effect থাকবে না। 
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

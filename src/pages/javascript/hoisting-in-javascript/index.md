@@ -3,7 +3,8 @@ title: Hoisting in JavaScript
 date: '2019-10-30'
 spoiler: Hoisting একটি JavaScript mechanism যেখানে code execution করার আগে variable এবং function declarations তাদের scope এ সবার উপরে নিয়ে যাওয়া হয়।
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

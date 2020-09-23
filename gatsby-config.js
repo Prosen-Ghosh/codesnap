@@ -119,6 +119,7 @@ module.exports = {
                         spoiler
                         author
                         occupation
+                        avatar
                         twitter
                         gitHub
                         stackOverflow

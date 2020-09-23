@@ -3,7 +3,8 @@ title: What is higher order function?
 date: '2019-10-13'
 spoiler: Higher-order function একটা এমন ধরণের function যেটা নিচের যে কোন একটা শর্ত পূরণ করবে, এক বা একাধিক function arguments হিসাবে নিবে। অথবা, একটা function result হিসাবে return করবে।
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

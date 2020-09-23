@@ -3,7 +3,8 @@ title: Understanding Scope in JavaScript
 date: '2019-10-28'
 spoiler: মোটামুটি সব গুলা প্রোগ্রামিং ল্যাঙ্গুয়েজে কিছু fundamental paradigms আছে, scope তার মধ্যে একটা। Scope এর মাধ্যমে প্রোগ্রাম থেকে variables এবং functions এর কোথায় access বা visibility আছে আর কোথায় access বা visibility নাই এইটা বোঝা যাবে।
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

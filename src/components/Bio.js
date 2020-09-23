@@ -33,7 +33,7 @@ class Bio extends React.Component {
         }}
       >
         <img
-          src={`https://avatars.io/twitter/${this.props.twitter}`}
+          src={this.props.avatar}
           alt={this.props.author || 'Unknown'}
           style={{
             marginRight: rhythm(1 / 2),
