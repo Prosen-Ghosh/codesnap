@@ -3,7 +3,8 @@ title: JavaScript Closure
 date: '2019-11-02'
 spoiler: Closure হচ্ছে JavaScript এর এমন একটা mechanism যেটা function invoke/destroy হওয়ার পর ও parent function এর lexical scope মনে রাখে। অন্যভাবে বললে বলা যায়, closure থাকার কারণে আমরা inner function থেকে outer function এর scope এ access পেতে পারি।
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

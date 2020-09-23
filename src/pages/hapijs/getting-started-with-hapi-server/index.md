@@ -3,7 +3,8 @@ title: Getting Started with Hapi Server.
 date: '2019-10-25'
 spoiler: এইখানে, আপনি একটি নতুন hapi server তৈরি করবেন। আপনার মেশিনে একটি নতুন প্রজেক্ট ফোল্ডার someproject তৈরি করুন যাতে প্রয়োজনীয় ফাইল থাকবে।
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

@@ -3,7 +3,8 @@ title: Use of filter(), map(), reduce() in JavaScript
 date: '2019-11-11'
 spoiler: filter, map, reduce, আলাদা ভাবে operate করা যায় কিংবা একসাথে চেইন করে ও ব্যবহার করা যায়। এই method গুলা array কে operate করে transform করে একটা নতুন result এ। 
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

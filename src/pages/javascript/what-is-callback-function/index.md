@@ -3,7 +3,8 @@ title: What is Callback Function?
 date: '2019-10-13'
 spoiler: যে কোনো function, যেটা ফাঙ্কশনের আর্গুমেন্ট হিসাবে পাঠানো হয় ঐটাই callback function।
 author: Prosen Ghosh
-occupation: Full Stack Developer @ HungryNaki
+occupation: Software Engineer @ Brain Station 23
+avatar: https://avatars1.githubusercontent.com/u/60597787?v=3&s=400
 twitter: prosenghosh25
 gitHub: Prosen-Ghosh
 stackOverflow: 3290456/prosen-ghosh

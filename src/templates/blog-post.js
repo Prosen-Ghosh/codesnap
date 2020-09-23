@@ -145,6 +145,7 @@ class BlogPostTemplate extends React.Component {
               author={post.frontmatter.author}
               url={post.frontmatter.twitter}
               occupation={post.frontmatter.occupation}
+              avatar={post.frontmatter.avatar}
               twitter={post.frontmatter.twitter}
               gitHub={post.frontmatter.gitHub}
               stackOverflow={post.frontmatter.stackOverflow}
@@ -207,6 +208,7 @@ export const pageQuery = graphql`
         spoiler
         author
         occupation
+        avatar
         twitter
         gitHub
         stackOverflow
